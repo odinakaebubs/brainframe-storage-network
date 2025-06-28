@@ -1,0 +1,23 @@
+[project]
+name = "brainframe-storage-network"
+authors = []
+description = ""
+telemetry = true
+requirements = []
+cache_dir = "/home/runner/workspace/brainframe-storage-network/./.requirements"
+boot_contracts = ["pox", "costs-v2", "bns"]
+[contracts.brainframe-storage-network]
+path = "contracts/brainframe-storage-network.clar"
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
